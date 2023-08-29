@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./js/api.js"></script>
+  </head>
+  <body>
+    <div class="ex2">
+      <p>2.todoapp</p>
+      <div data-aos="flip-down" data-aos-duration="3000">
+        <form action="">
+          <p>일정명 : <input class="input_title" type="text" /></p>
+          <p>일자 : <input class="input_date" type="date" /></p>
+          <button>추가하기</button>
+        </form>
+      </div>
+      <hr />
+      <p>검색 : <input class="search" type="text" /></p>
+      <p>
+        정렬 :
+        <select name="" id="">
+          <option value="latest">최신등록순</option>
+          <option value="reverse">등록순</option>
+          <option value="title">일정명</option>
+          <option value="date">시간순</option>
+        </select>
+      </p>
+      <p class="result"></p>
+    </div>
+
+    <hr />
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
